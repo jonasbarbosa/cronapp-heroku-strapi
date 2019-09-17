@@ -1,0 +1,33 @@
+<form class="navbar-form navbar-left" role="search">
+  <div class="form-group">
+    <button type="button" class="btn btn-primary" ng-hide="inserting || readonly" ng-click="startInserting()">Novo</button>
+    <input type="text" class="form-control" placeholder="Buscar" ng-model="searchText">
+  </div>
+</form>
+<table class="table table-hover table-striped table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th ng-repeat="headerName in headers">{{headerName}}</th>
+          <th ng-hide="readonly">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-show="inserting">
+          <td>#</th>
+          <td ng-repeat = "fieldName in fields"><input type="text" ng-model="transitient[fieldName]"/></td>
+          <td class=".col-md-1"><button type="button" ng-click="doInsert()" class="btn btn-success"><i class="glyphicon glyphicon-ok"></i></button></td>
+        </tr>
+        <tr ng-repeat="rowData in data[dataset].data | filter: searchText" 
+            ng-click="selectRow(rowData[data[dataset].key])"
+            ng-dblclick="doEdit(rowData[data[dataset].key])" 
+            ng-class="isActive(rowData[data[dataset].key]) ? 'success' : ''">
+          <td>{{$index}}</th>
+          <td ng-repeat = "fieldName in fields">{{ fieldName.indexOf('.') == -1 ? rowData[fieldName] : rowData[ fieldName.split('.')[0] ][ fieldName.split('.')[1]] }}</td>
+          <td class=".col-md-1" ng-hide="readonly">
+            <button type="button" ng-click="doDelete(rowData[data[dataset].key])" class="btn btn-default"><i class="glyphicon glyphicon-trash"></i></button>
+            <button type="button" ng-click="doEdit(rowData[data[dataset].key], $index)" class="btn btn-default"><i class="glyphicon glyphicon-pencil"></i></button>
+          </td>
+        </tr>
+      </tbody>
+</table>

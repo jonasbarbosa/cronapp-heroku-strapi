@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "module": "system",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "allowSyntheticDefaultImports": true,
+        "sourceMap": true,
+        "outFile": "dist/cronapi.async.js",
+        "target": "es3",
+        "lib": [
+            "es6",
+            "dom"    
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+}

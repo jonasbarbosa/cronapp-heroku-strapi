@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><blockly formTarget="src/main/webapp/views/logged/postdateandtime.view.html" resourceType="JAVA" ruleDescription="postest" ruleName="postest" ruleSynchronous="false" ruleTimeout="300" ruleType="I">
+  <metadata scale="1" scrollx="1715.2" scrolly="1253.3" target="Anb:u5+^,0vLkL9QIqn5"/>
+  <block colour="#995ba5" id="Anb:u5+^,0vLkL9QIqn5" origintype="procedures_defreturn" output="false" tooltip="Cria uma função que possui um valor de retorno." type="procedures_defreturn" x="-1567" y="-1162">
+    <field name="NAME">postesteeer</field>
+    <comment h="80" pinned="false" w="160">postest</comment>
+    <statement name="STACK">
+      <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="^_fL5kC*c}%G%3%XZ:gY" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+        <field name="VAR">url</field>
+        <value name="VALUE">
+          <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="Wp+DF7+P9X;q/kt3mia0" origintype="text_join" output="true" tooltip="Criar um pedaço de texto juntando qualquer número de itens." type="text_join">
+            <mutation items="1"/>
+            <value name="ADD0">
+              <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="o/%,#BU)PRE;.X6B57lV" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                <field name="TEXT">https://cronapp-heroku-strapi.herokuapp.com/posts/</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <next>
+          <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="VgS9+fhQ6S`Q@=[x$gBJ" origintype="variables_set" output="false" tooltip="Define esta variável para o valor da entrada." type="variables_set">
+            <field name="VAR">produto</field>
+            <value name="VALUE">
+              <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="nEDWs[d~{@-|%3OQ?*Sv" multilayer="false" namespace="cronapi.util.Operations.getURLFromOthers" origintype="procedures_callreturn" output="true" returntype="ObjectType.STRING" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20conte%C3%BAdo%20da%20URL%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20realiza%20uma%20requisi%C3%A7%C3%A3o%20%C3%A0%20uma%20URL%20e%20obt%C3%A9m%20o%20conte%C3%BAdo%20de%20resposta%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20M%C3%A9todo%20da%20requisi%C3%A7%C3%A3o%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Tipo%20de%20conte%C3%BAdo%20:%20Texto%3C/span%3E%3Cbr%3E%3Cspan%3E%20-%20Endere%C3%A7o%20URL%20:%20Texto%3C/span%3E%3Cdiv%3E%20Endere%C3%A7o%20completo%20do%20arquivo.%20Exemplo:%20https://www.cronapp.io%3C/div%3E%3Cspan%3E%20-%20Param%C3%AAtros%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Param%C3%AAtros%20a%20serem%20passados,%20para%20URL_ENCODED%20passar%20um%20mapa,%20para%20JSON,%20passar%20JSON%3C/div%3E%3Cspan%3E%20-%20Cabe%C3%A7alho%20de%20requisi%C3%A7%C3%A3o%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Mapa%20com%20cabe%C3%A7alho%20de%20requisi%C3%A7%C3%A3o%20a%20ser%20adicionado%20na%20requisi%C3%A7%C3%A3o.%20Exemplo:%20Token.%3C/div%3E%3Cspan%3E%20-%20Dados%20para%20postagem%20:%20Mapa%3C/span%3E%3Cdiv%3E%20Dados%20a%20serem%20postados%20na%20requisi%C3%A7%C3%A3o,%20para%20URL_ENCODED%20passar%20um%20mapa,%20para%20JSON,%20passar%20JSON%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Texto%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getURLFromOthers%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.util.Operations.getURLFromOthers%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                <mutation name="{{cronapi.util.Operations.getURLFromOthers}}" return-raw-type="cronapi.Var">
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Método da requisição"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Tipo de conteúdo"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Endereço URL"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.MAP" name="Paramêtros"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.MAP" name="Cabeçalho de requisição"/>
+                  <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.MAP" name="Dados para postagem"/>
+                </mutation>
+                <value name="ARG0">
+                  <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="E07{{KB;Reyo:O~-31at" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="GET" value="GET"/>
+                      <arg name="POST" value="POST"/>
+                      <arg name="PUT" value="PUT"/>
+                      <arg name="DELETE" value="DELETE"/>
+                      <arg name="PATCH" value="PATCH"/>
+                      <arg name="HEAD" value="HEAD"/>
+                      <arg name="OPTIONS" value="OPTIONS"/>
+                      <arg name="TRACE" value="TRACE"/>
+                    </mutation>
+                    <field name="SELECT">POST</field>
+                  </block>
+                </value>
+                <value name="ARG1">
+                  <block colour="#487f7f" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="*TdZ4EO-q]x:v0vmZWpF" origintype="util_dropdown" output="true" type="util_dropdown">
+                    <mutation>
+                      <arg name="application/x-www-form-urlencoded" value="x_www_form_urlencoded"/>
+                      <arg name="application/json" value="JSON"/>
+                    </mutation>
+                    <field name="SELECT">application/x-www-form-urlencoded</field>
+                  </block>
+                </value>
+                <value name="ARG2">
+                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="C[wi+J]nXlMlljx*tQ?Q" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT"/>
+                  </shadow>
+                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="B+1*)2v]nhS_yhXkiJzP" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">url</field>
+                  </block>
+                </value>
+                <value name="ARG5">
+                  <block colour="#917731" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="fY%Y@#Qi`3T0-wFyZCI`" multilayer="false" namespace="cronapi.map.Operations.createObjectMapWith" origintype="maps_create_with" output="true" returntype="ObjectType.MAP" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3ECriar%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20que%20cria%20um%20objeto%20mapa%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Valor(es)%20:%20Objeto%3C/span%3E%3Cdiv%3E%20Valores%20a%20serem%20adicionados%20na%20cria%C3%A7%C3%A3o%20do%20mapa%3C/div%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Mapa%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.map.Operations.createObjectMapWith%3C/a%3E%3C/div%3E%3C/div%3E" type="maps_create_with">
+                    <mutation name="{{cronapi.map.Operations.createObjectMapWith}}">
+                      <arg name="title"/>
+                      <arg name="content"/>
+                    </mutation>
+                    <value name="ARG0">
+                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="5g8+V8MT(x@u]7+rh9Et" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.Operations.getValueOfField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.Operations.getValueOfField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="raK}xJ+.R9@^wttQR`:9" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                            <field name="SELECT">postDateAndTime.active.data</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <value name="ARG1">
+                      <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="[#qIb,lf1ETt5ED-Q2gD" multilayer="false" namespace="cronapi.screen.Operations.getValueOfField" origintype="procedures_callreturn" output="true" returntype="ObjectType.JSON" tooltip="%3Cdiv%20class=%22name%22%3E%3Cstrong%3ENome:%3C/strong%3E%3Cdiv%3EObter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22description%22%3E%3Cstrong%3EDescri%C3%A7%C3%A3o:%3C/strong%3E%3Cdiv%3EFun%C3%A7%C3%A3o%20para%20obter%20valor%20do%20campo%3C/div%3E%3C/div%3E%3Cdiv%20class=%22params%22%3E%3Cstrong%3EParam%C3%AAtro:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Campo%20:%20Texto%3C/span%3E%3Cbr%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22return%22%3E%3Cstrong%3ERetorno:%3C/strong%3E%3Cdiv%3E%3Cspan%3E%20-%20Json%3C/span%3E%3C/div%3E%3C/div%3E%3Cdiv%20class=%22link%22%3E%3Cstrong%3EAjuda:%3C/strong%3E%3Cdiv%20class=%22tooltip-link%22%3E%3Ca%20target=%22_blank%22%20href=%22https://docs.cronapp.io/display/CRON2/cronapi.screen.Operations.getValueOfField%22%3Ehttps://docs.cronapp.io/display/CRON2/cronapi.screen.Operations.getValueOfField%3C/a%3E%3C/div%3E%3C/div%3E" type="procedures_callreturn">
+                        <mutation name="{{cronapi.screen.Operations.getValueOfField}}" return-raw-type="cronapi.Var">
+                          <arg cronapi-raw-type="cronapi.Var" cronapi-type="ObjectType.STRING" name="Campo"/>
+                        </mutation>
+                        <value name="ARG0">
+                          <block colour="#934848" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="od1=?1V8!ts%krLcfiE[" origintype="form_fieldscreen_callreturn" output="true" type="form_fieldscreen_callreturn">
+                            <field name="SELECT">postDateAndTime.active.hora</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block colour="#5ba58c" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="=Bb4`ENpK2s1L)~IAByV" origintype="text_print" output="false" tooltip="Imprime o texto, número ou valor especificado." type="text_print">
+                <value name="TEXT">
+                  <shadow colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="9L39sE3QrJ={Q-v?I:Ax" origintype="text" output="true" tooltip="function () { [native code] }" type="text">
+                    <field name="TEXT">abc</field>
+                  </shadow>
+                  <block colour="#0088ee" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="4fc[-z]ZP6+Ul4EOb-~i" origintype="variables_get" output="true" tooltip="Retorna o valor desta variável." type="variables_get">
+                    <field name="VAR">produto</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="eHZB8,3xplQ}B5=fvukW" origintype="text" output="true" tooltip="function () { [native code] }" type="text" x="47" y="-849">
+    <field name="TEXT">https://my-api-strapi.herokuapp.com/produtos</field>
+  </block>
+  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="(Q2-dO?uK4K@-Sh5KG7}" origintype="text" output="true" tooltip="function () { [native code] }" type="text" x="67" y="-809">
+    <field name="TEXT">https://my-api-strapi.herokuapp.com/produtos</field>
+  </block>
+  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="eS,h5)T9aFrn::kI%KM!" origintype="text" output="true" tooltip="function () { [native code] }" type="text" x="87" y="-769">
+    <field name="TEXT">https://my-api-strapi.herokuapp.com/produtos</field>
+  </block>
+  <block colour="#5ba593" dependencyby="Anb:u5+^,0vLkL9QIqn5" id="IVBmHg$k7-LcgGii:brz" origintype="text" output="true" tooltip="function () { [native code] }" type="text" x="107" y="-729">
+    <field name="TEXT">https://my-api-strapi.herokuapp.com/produtos</field>
+  </block>
+</blockly>

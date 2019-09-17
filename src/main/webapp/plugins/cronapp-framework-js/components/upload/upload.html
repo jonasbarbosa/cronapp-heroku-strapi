@@ -1,0 +1,38 @@
+<html>
+<head></head>
+<body>
+<form id="uploadForm" role="form" novalidate show-validation>
+    <div class="modal-header">
+        <h4 class="modal-title">{{"Upload.title" | translate}}</h4>
+    </div>
+    <div class="modal-body">
+        <div class="panel-body">
+            <div ng-show="uploading">
+                <span>{{"Upload.sending" | translate}} ({{progress}}%)...</span>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="{{progress}}"
+                         aria-valuemin="0" aria-valuemax="100" style="width:{{progress}}%">
+                    </div>
+                </div>
+            </div>
+            <div cronapp-dynamic-image ng-show="!uploading"
+                 class="drop-box  modal-upload"
+                 ng-model="files"
+                 ngf-drop
+                 ngf-select
+                 ngf-max-size="{{data.maxSize}}"
+                 ngf-pattern="{{data.filter}}"
+                 ngf-multiple="{{data.multiple}}"
+                 ngf-change="uploadFile($files)">
+
+                <span>{{message}}</span>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-toggle="tooltip" title="{{ 'Cancel' | translate }}" ng-click="close()"> <span class="glyphicon glyphicon-ok"></span>&nbsp;<span>{{ 'Cancel' | translate }}</span> </button>
+    </div>
+</form>
+</body>
+</html>

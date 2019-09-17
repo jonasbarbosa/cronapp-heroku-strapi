@@ -1,0 +1,4 @@
+<div class="form-group col-sm-12" ng-init="param=cloneElement(report.parameters[$index])" ng-show="isVisibleParam(param)">
+    <label for="_field_">{{getDescription(report.parameters[$index])}}</label>
+    <input type="date" class="form-control input-sm" name="name" id="_field_" ng-model="report.parameters[$index].value" format-date>
+</div>

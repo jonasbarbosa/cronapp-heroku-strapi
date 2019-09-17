@@ -1,0 +1,57 @@
+{
+  "auth": {
+    "customId": "auth",
+    "queryName": "Autenticar",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "User",
+    "entityFullName": "app.entity.User",
+    "query": "select o from User o where o.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "POST": false,
+      "PUT": false,
+      "DELETE": false
+    },
+    "events": {},
+    "defaultValues": {},
+    "security": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/auth/"
+  },
+  "roles": {
+    "customId": "roles",
+    "queryName": "Obter Autorização",
+    "screen": "",
+    "sourceType": "entityFullName",
+    "entitySimpleName": "Role",
+    "entityFullName": "app.entity.Role",
+    "query": "select o.id from Role o where o.user.login \u003d :login",
+    "queryParamsValues": [
+      {
+        "fieldName": "login",
+        "fieldValue": ""
+      }
+    ],
+    "verbs": {
+      "GET": false,
+      "POST": false,
+      "PUT": false,
+      "DELETE": false,
+      "FILTER": true
+    },
+    "events": {},
+    "defaultValues": {},
+    "security": {},
+    "calcFields": {},
+    "calcFieldsSecurity": {},
+    "errorHandles": {},
+    "serviceUrl": "api/cronapi/query/roles/"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "includes": [
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/parser.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/datasource/datasource.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/odata-filter-parser.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/pouchdb.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/pouchdb.find.min.js",
+      "type": "script"
+    }
+  ],
+  "removes": [
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-mobile-js/dist/components/js/datasource.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/datasource.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/parser.min.js",
+      "type": "script"
+    }
+  ]
+}

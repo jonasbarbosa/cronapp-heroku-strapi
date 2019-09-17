@@ -1,0 +1,237 @@
+{
+  "copies": [
+    {
+      "from": "plugins/cronapp-framework-js/js/custom.controllers.js",
+      "to": "js/custom.controllers.js"
+    },
+    {
+      "from": "plugins/cronapp-framework-js/js/customModules.js",
+      "to": "js/customModules.js"
+    },
+    {
+      "from": "plugins/cronapp-framework-js/js/customStateProvider.js",
+      "to": "js/customStateProvider.js"
+    }
+  ],
+  "includes": [
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/jquery.mask.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/jquery.inputmask.bundle.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/upload.service.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "js/customModules.js",
+      "type": "script",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "js/customStateProvider.js",
+      "type": "script",
+      "onTop": true
+    },
+    {
+      "file": "index.html",
+      "script": "js/custom.controllers.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/format.min.js",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/reports/reports.service.js",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/reports/parameters.controller.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "js/system-events.js",
+      "type": "script"
+    },
+	    {
+      "file": "index.html",
+      "script": "js/blockly.js",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/qrcode.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "js/dataSourceMap.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/parser.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-common-js/dist/js/datasource/datasource.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapi-js/dist/cronapi.min.js",
+      "type": "script"
+    }
+  ],
+  "removes": [
+    {
+      "file": "index.html",
+      "script": "plugins/ngMask/dist/ngMask.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/jquery.maskMoney.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/format.min.js",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "/js/blockly.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/summernote/dist/summernote.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/angular-summernote/dist/angular-summernote.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/summernote/dist/summernote.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/summernote/dist/lang/summernote-pt-BR.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.common-bootstrap.min.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.bootstrap.min.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.bootstrap.mobile.min.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/js/kendo.all.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.common.min.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/kendo-ui/js/jszip.min.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/stimulsoft/stimulsoft.viewer.css",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/stimulsoft/stimulsoft.reports.pack.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/stimulsoft/stimulsoft.viewer.pack.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/js/stimulsoft/stimulsoft-helper.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/css/cronos.css",
+      "type": "script"
+    },
+	{
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.common.min.css?v=2.0.0",
+      "type": "style"
+    },
+	{
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-lib-js/dist/js/kendo-ui/styles/kendo.cerulean.mobile.min.css?v=2.0.0",
+      "type": "style"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapi-js/cronapi.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "plugins/cronapp-framework-js/dist/components/js/datasource.js",
+      "type": "script"
+    },
+    {
+      "file": "index.html",
+      "script": "https://www.gstatic.com/firebasejs/4.9.0/firebase.js",
+      "type": "script"
+    }
+  ]
+}

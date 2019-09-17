@@ -1,0 +1,3 @@
+@import '../../../cronapp-lib-js/dist/js/kendo-ui/styles/kendo.material-v2.min.css';
+@import 'custom/material/custom-material.css';
+@import 'custom/navigator/custom-navigator.css';

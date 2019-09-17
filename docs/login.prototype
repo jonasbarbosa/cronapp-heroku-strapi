@@ -1,0 +1,24 @@
+<mxGraphModel dx="923" dy="358" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" background="#333333">
+  <root>
+    <mxCell id="0"/>
+    <mxCell id="1" parent="0"/>
+    <mxCell id="2" value="Login Screen" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.containers.window;align=left;verticalAlign=top;spacingLeft=8;strokeColor2=#008cff;strokeColor3=#c4c4c4;fontColor=#666666;fillColor=#ffffff;mainText=;fontSize=17;labelBackgroundColor=none;" parent="1" vertex="1">
+      <mxGeometry x="-10" y="30" width="400" height="280" as="geometry"/>
+    </mxCell>
+    <mxCell id="3" value="Login" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;fillColor=#3D8BCD;align=center;strokeColor=#3D8BCD;fontColor=#ffffff;fontSize=16;whiteSpace=wrap;" parent="1" vertex="1">
+      <mxGeometry x="140" y="200" width="80" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="4" value="Username" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#dddddd;fillColor=#ffffff;spacingLeft=50;fontSize=14;align=left;fontColor=#dddddd;whiteSpace=wrap;fontColor=#808080" parent="1" vertex="1">
+      <mxGeometry x="65" y="90" width="250" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="5" value="@" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.leftButton;rSize=5;strokeColor=#dddddd;fillColor=#f0f0f0;whiteSpace=wrap;resizeHeight=1;" parent="4" vertex="1">
+      <mxGeometry width="40" height="30" relative="1" as="geometry"/>
+    </mxCell>
+    <mxCell id="6" value="Password" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.rrect;rSize=5;strokeColor=#dddddd;fillColor=#ffffff;spacingLeft=50;fontSize=14;align=left;fontColor=#dddddd;whiteSpace=wrap;fontColor=#808080" parent="1" vertex="1">
+      <mxGeometry x="65" y="130" width="250" height="30" as="geometry"/>
+    </mxCell>
+    <mxCell id="7" value="@" style="html=1;shadow=0;dashed=0;shape=mxgraph.bootstrap.leftButton;rSize=5;strokeColor=#dddddd;fillColor=#f0f0f0;whiteSpace=wrap;resizeHeight=1;" parent="6" vertex="1">
+      <mxGeometry width="40" height="30" relative="1" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>

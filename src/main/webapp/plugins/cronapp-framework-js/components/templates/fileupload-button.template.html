@@ -1,0 +1,6 @@
+<label class="btn btn-primary" xattr-theme="btn-primary">
+    <i class="glyphicon glyphicon-cloud-upload"></i> 
+    <input type="file" style="display:none" onchange="$('#upload-file-info').html($(this).val().split('\\')[2])">
+    <span>Upload</span>
+</label>
+<label id="upload-file-info"></label> 

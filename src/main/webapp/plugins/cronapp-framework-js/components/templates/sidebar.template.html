@@ -1,0 +1,23 @@
+<div class="nav-side-menu navbar-default" > 
+  <div class="brand"> 
+    <div class="avatar hidden-xs hidden-sm"> 
+      <img alt="" ng-src="{{vm.userpictureurl || 'img/nophoto.png'}}" class=""> 
+    </div> 
+    <div class="info"> 
+      <div class="name navbar-brand">
+         {{session.name}} 
+      </div> 
+    </div> 
+  </div> 
+  <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content1"></i> 
+  <div class="menu-list"> 
+    <ul id="menu-content1" class="menu-content collapse out navbar-nav"> 
+      <li data-toggle="collapse" data-target="#menu-sub-1" class="collapsed component-holder" data-component="crn-sidebar-item"> 
+        <a href="#/home" class=""><i class="fa fa-lg fa-home"></i> <span class="">Home</span></a> 
+      </li> 
+      <li data-toggle="collapse" data-component="crn-sidebar-item" data-target="#menu-sub-2787" class="collapsed component-holder selected-holder" ng-click="logout()">
+        <a href="javascript:void(0);" class=""><i class="fa fa-lg fa-sign-out"></i> <span class="">Logout</span></a> 
+      </li> 
+    </ul> 
+  </div> 
+</div>

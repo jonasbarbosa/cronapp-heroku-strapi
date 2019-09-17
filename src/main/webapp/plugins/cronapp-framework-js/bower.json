@@ -1,0 +1,48 @@
+{
+    "name": "cronapp-framework-js",
+    "version": "2.2.17",
+    "homepage": "https://github.com/technecloud/cronapp-framework-js",
+    "authors": [
+        "Techne Engenharia e Sistemas <contato@techne.com.br>"
+    ],
+    "description": "Javascript library for CronApp's projects",
+    "main": "cronapp.framework.js",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "1.5.9",
+        "angular-bootstrap": "0.13.0",
+        "angular-cookies": "1.5.8",
+        "angular-dynamic-locale": "0.1.32",
+        "angular-i18n": "1.4.5",
+        "angular-justgage": "1.0.1",
+        "ngMask": "angular-mask#3.0.12",
+        "angular-resource": "1.3.15",
+        "angular-sanitize": "1.3.15",
+        "angular-translate": "2.11.1",
+        "angular-translate-handler-log": "2.11.1",
+        "angular-translate-loader-static-files": "2.11.1",
+        "angular-translate-storage-local": "2.11.1",
+        "angular-ui-notification": "0.0.14",
+        "angular-ui-router": "0.2.15",
+        "jquery": "2.1.4",
+        "bootstrap": "3.3.4",
+        "angular-chart.js": "1.1.1",
+        "eonasdan-bootstrap-datetimepicker": "4.17.37",
+        "font-awesome": "4.4.0",
+        "angular-ui-select": "0.18.1",
+        "ui-select-infinity": "0.1.5",
+        "ng-file-upload": "12.2.13",
+        "cpf_cnpj": "0.2.0",
+        "pace": "1.0.2"
+    },
+	"resolutions": {
+		"angular": "1.5.9"
+	}
+}

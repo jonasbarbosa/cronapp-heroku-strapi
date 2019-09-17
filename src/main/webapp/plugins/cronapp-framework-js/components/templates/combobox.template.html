@@ -1,0 +1,13 @@
+<div class="form-group">
+    <label for="">Label</label>
+    <ui-select crn-datasource="[{'key': 1,'value':'Value 1'},{'key': 2,'value':'Value 2'},{'key': 3,'value':'Value 3'}]" ng-model="vars.combobox${RANDOM}" ng-required="false" ng-disabled="disabled" class="crn-select">
+        <ui-select-match placeholder="Select..." class="">
+            {{$select.selected.value}}
+        </ui-select-match>
+        <ui-select-choices repeat="rowData.key as rowData in datasource.data | filter: $select.search" class="">
+            <div class="">
+                {{rowData.value}}
+            </div>
+        </ui-select-choices>
+    </ui-select>
+</div>

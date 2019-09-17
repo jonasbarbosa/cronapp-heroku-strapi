@@ -1,0 +1,177 @@
+<h1 class="component-holder text-left h3" xattr-position="text-left" xattr-type="h3" data-component="crn-text-component" id="crn-text-component-58700">User</h1>
+
+<datasource data-component="crn-datasource" filter="" name="User" entity="app.User" keys="id" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="{&quot;params&quot;:[],&quot;expression&quot;:{&quot;type&quot;:&quot;OR&quot;,&quot;args&quot;:[{&quot;type&quot;:&quot;%&quot;,&quot;left&quot;:&quot;name&quot;,&quot;right&quot;:&quot;{{vars.search|raw}}&quot;,&quot;args&quot;:[]}]}}" lazy="true"></datasource>
+
+        <div ng-hide="User.inserting || User.editing" data-component="crn-textinput" id="crn-datasource-filter-general58700" class="">
+            <div class="form-group">
+                <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label>
+                <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" value="" placeholder="{{'template.crud.search' | translate}}">
+            </div>
+        </div>
+
+<div ng-hide="User.editing || User.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search">
+    <cron-grid
+            options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;User&quot;,&quot;entity&quot;:&quot;app.User&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.User&quot;,&quot;customId&quot;:&quot;User&quot;,&quot;name&quot;:&quot;User&quot;,&quot;customQueryName&quot;:&quot;app.User&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.User&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;id&quot;:&quot;app.User&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;hideModalButtons&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;name&quot;,&quot;headerText&quot;:&quot;Nome&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;comboboxOptions&quot;:{&quot;dataSourceScreen&quot;:{&quot;schema&quot;:[]},&quot;relationDataSource&quot;:{&quot;schema&quot;:[]},&quot;staticDataSource&quot;:[],&quot;filterKeyValues&quot;:{&quot;&quot;:&quot;&quot;,&quot;contains&quot;:&quot;Contendo&quot;,&quot;startswith&quot;:&quot;Iniciando com&quot;,&quot;endswith&quot;:&quot;Final com&quot;},&quot;customTemplate&quot;:false},&quot;aggregates&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[],&quot;groupings&quot;:[]}"
+            ng-model="vars.grid58700"
+            class=""
+            style="">
+    </cron-grid>
+</div>
+
+<div data-component="crn-form" id="crn-form-form-User-58700">
+    <div class="form" ng-show="User.editing || User.inserting">
+        <form crn-datasource="User" class="">
+            <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button>
+                <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button>
+                <button class="btn btn-danger btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button>
+            </div>
+            <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting">
+                <button class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button>
+                <button class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button>
+            </div>
+            <br/>
+            <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting">
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-name-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-name" class="">Nome</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.name"
+                                            class="form-control k-textbox"
+                                            id="textinput-name"
+                                            placeholder="Nome"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-email-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-email" class="">Email</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.email"
+                                            class="form-control k-textbox"
+                                            id="textinput-email"
+                                            placeholder="Email"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-id-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-id" class="">Id</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.id"
+                                            class="form-control k-textbox"
+                                            id="textinput-id"
+                                            placeholder="Id"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-login-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-login" class="">Login</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.login"
+                                            class="form-control k-textbox"
+                                            id="textinput-login"
+                                            placeholder="Login"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-picture-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-picture" class="">Imagem</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.picture"
+                                            class="form-control k-textbox"
+                                            id="textinput-picture"
+                                            placeholder="Imagem"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-password-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-password" class="">Senha</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="password"
+                                            ng-model="User.active.password"
+                                            class="form-control k-textbox"
+                                            id="textinput-password"
+                                            placeholder="Senha"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="true">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+
+
+                    <div data-component="crn-textinput" id="crn-textinput-theme-58700" class="">
+                        <div class="form-group">
+                                <label for="textinput-theme" class="">Tema</label>
+ <!-- else for if !model.hasCronappFramework() -->
+                                    <input
+                                            type="text"
+                                            ng-model="User.active.theme"
+                                            class="form-control k-textbox"
+                                            id="textinput-theme"
+                                            placeholder="Tema"
+                                            mask=""
+                                            mask-placeholder=""
+                                            ng-required="false">
+                             <!-- end if !model.hasCronappFramework() -->
+                        </div>
+                    </div>
+                <!-- NtoN  -->
+                <!-- NtoN  end-->
+            </fieldset>
+        </form>
+        <form>
+            <fieldset>
+                <!-- OneToN -->
+                <!-- OneToOne  end -->
+            </fieldset>
+        </form>
+        &ensp;
+    </div>
+</div>
+
+

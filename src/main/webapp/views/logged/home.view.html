@@ -1,0 +1,60 @@
+<div class="jumbotron jumbotron-fluid main-title">
+    <h2 class="component-holder text-left" xattr-position="text-left" data-component="crn-subtitle" id="crn-subtitle-814474">cronapp-heroku-strapi</h2>
+</div>
+<div class="component-holder ng-binding ng-scope crn-navigator-horizontal" data-component="crn-navbar" id="crn-navbar-986427">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="component-holder ng-binding ng-scope navbar-brand" data-component="crn-image" href="#/home"> <img src="plugins/cronapp-framework-js/dist/img/logo.svg" style="width:101px; margin-top:-4px" id="crn-navbar-logo" data-component="crn-image"> </a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav" style="float:none">
+          <li class="dropdown component-holder navbar-right" data-component="crn-menu-item"> <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <i class="fa fa-lg fa-gear"></i> <span>{{"ChooseTheme" | translate}}</span> <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+              <li ng-repeat="theme in themes" ng-click="changeTheme(theme)"> <a href="javascript:void(0);" ng-class="{'bg-primary': myTheme==theme}">{{theme}} <i class="fa fa-lg fa-check pull-right" ng-if="myTheme==theme"></i></a></li>
+            </ul> </li>
+          <li class="dropdown component-holder navbar-right" data-component="crn-menu-item"> <a href="javascript:void(0);" class="dropdown-toggle" style="color: #fff;min-width: 123px;" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <img class="user-avatar" alt="{{session.user.name}}" ng-src="{{session.user.picture || 'plugins/cronapp-framework-js/dist/img/img-user.svg'}}" style="max-height:22px;max-width:22px" data-component="crn-image"> <span>{{session.user.name}}</span> <span class="caret"></span> </a>
+            <ul class="dropdown-menu">
+              <li><a class="component-holder" data-toggle="modal" data-target="#modalPassword" data-component="crn-anchor">{{"Home.view.ChangePassword" | translate}}</a></li>
+              <li><a ng-click="logout()" href="" data-component="crn-anchor"><span>{{"Home.view.Logout" | translate}}</span></a></li>
+            </ul> </li>
+            <cron-dynamic-menu class="component-holder" data-component="crn-dynamic-menu" options="{&quot;escope&quot;:&quot;WEB&quot;,&quot;subMenuOptions&quot;:[{&quot;id&quot;:&quot;1h85bvnhg7511&quot;,&quot;name&quot;:&quot;Home&quot;,&quot;title&quot;:&quot;{{'Home.view.Home' | translate}}&quot;,&quot;iconClass&quot;:&quot;fa fa-home&quot;,&quot;action&quot;:&quot;cronapi.screen.changeView('#/home', [])&quot;,&quot;level&quot;:1,&quot;textPosition&quot;:&quot;left&quot;,&quot;imagePosition&quot;:&quot;left&quot;,&quot;contentTheme&quot;:&quot;light&quot;,&quot;iconTheme&quot;:&quot;light&quot;,&quot;menuItems&quot;:[]},{&quot;id&quot;:&quot;1iynbo1wq8twj&quot;,&quot;name&quot;:&quot;Admin&quot;,&quot;title&quot;:&quot;{{'Home.view.Admin' | translate}}&quot;,&quot;iconClass&quot;:&quot;fa fa-user&quot;,&quot;security&quot;:&quot;visible : Administrators, enabled : Administrators&quot;,&quot;action&quot;:&quot;&quot;,&quot;level&quot;:1,&quot;textPosition&quot;:&quot;left&quot;,&quot;imagePosition&quot;:&quot;left&quot;,&quot;contentTheme&quot;:&quot;light&quot;,&quot;iconTheme&quot;:&quot;light&quot;,&quot;menuItems&quot;:[{&quot;id&quot;:&quot;t4fkwdjzlcmu&quot;,&quot;name&quot;:&quot;Users&quot;,&quot;title&quot;:&quot;{{'Home.view.Users' | translate}}&quot;,&quot;iconClass&quot;:&quot;fa fa-user&quot;,&quot;security&quot;:&quot;visible : Administrators, enabled : Administrators&quot;,&quot;action&quot;:&quot;cronapi.screen.changeView('#/home/admin/user', [])&quot;,&quot;level&quot;:2,&quot;textPosition&quot;:&quot;left&quot;,&quot;imagePosition&quot;:&quot;left&quot;,&quot;contentTheme&quot;:&quot;light&quot;,&quot;iconTheme&quot;:&quot;light&quot;,&quot;menuItems&quot;:[]}]},{&quot;id&quot;:&quot;qy4xsql4535i&quot;,&quot;name&quot;:&quot;api&quot;,&quot;title&quot;:&quot;api&quot;,&quot;action&quot;:&quot;cronapi.screen.changeView('#/home/logged/postdateandtime', [])&quot;,&quot;level&quot;:1,&quot;textPosition&quot;:&quot;left&quot;,&quot;imagePosition&quot;:&quot;left&quot;,&quot;contentTheme&quot;:&quot;light&quot;,&quot;iconTheme&quot;:&quot;light&quot;,&quot;menuItems&quot;:[]}]}">Dynamic Menu</cron-dynamic-menu>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<div ui-view="" class="container-fluid main-view main-view-horizontal">
+</div> 
+<div class="modal fade" id="modalPassword">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button>
+        <h4 class="modal-title">{{"Home.view.ChangePassword" | translate}}</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-validation" autocomplete="off" name="form" role="form">
+          <div class="text-danger wrapper text-center" ng-show="authError">
+          </div>
+          <div class="list-group list-group-sm">
+            <div class="list-group-item">
+              <input type="password" class="form-control k-textbox" id="oldPassword" placeholder="{{'Home.view.Old Password' | translate}}" ng-required="true">
+            </div>
+            <div class="list-group-item">
+              <input type="password" class="form-control k-textbox" id="newPassword" placeholder="{{'Home.view.New Password' | translate}}" ng-required="true">
+            </div>
+            <div class="list-group-item">
+              <input type="password" class="form-control k-textbox" id="newPasswordConfirmation" placeholder="{{'Home.view.Confirmation' | translate}}" ng-required="true">
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary btn-fab k-button" type="submit" ng-click="changePassword()" ng-disabled="form.$invalid || vm.dataLoading"><span class="k-icon k-i-check"></span></button>
+        <button class="btn btn-default btn-fab k-button" type="button" data-dismiss="modal"><span class="k-icon k-i-close"></span></button>
+      </div>
+    </div>
+  </div>
+</div>

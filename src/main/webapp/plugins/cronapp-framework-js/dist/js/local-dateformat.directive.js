@@ -1,0 +1,1 @@
+angular.module("MyApp").directive("dateFormat",function(){return{require:"ngModel",link:function(a,b,c,d){d.$formatters.push(function(a){return a?new Date(a):null})}}});

@@ -1,0 +1,9 @@
+var strings = new Array();
+strings['cancel'] = 'Cancelar';
+strings['accept'] = 'OK';
+strings['manual'] = 'Manual';
+strings['latex'] = 'LaTeX';
+strings['close'] = 'Fechar';
+strings['minimise'] = 'Minimizar';
+strings['fullscreen'] = 'Tela inteira';
+strings['close_modal_warning'] = 'Você tem certeza de que quer sair? As alterações feitas serão perdidas.';

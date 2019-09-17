@@ -1,0 +1,6 @@
+@import '../../../cronapp-lib-js/dist/js/kendo-ui/styles/kendo.common-bootstrap.min.css';
+@import '../../../cronapp-lib-js/dist/js/kendo-ui/styles/kendo.bootstrap.min.css';
+@import '../../../cronapp-lib-js/dist/js/kendo-ui/styles/kendo.bootstrap.mobile.min.css';
+@import 'custom/journal/custom-journal.min.css';
+@import 'custom/navigator/custom-navigator.css';
+@import '../../dist/css/cronos.css';

@@ -1,0 +1,110 @@
+<h3>{{"Users.view.Users" | translate}}</h3> 
+<datasource data-component="crn-datasource" filter="" name="User" entity="app.User" keys="id" rows-per-page="100" class="" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" parameters="" condition="" dependent-lazy-post="" lazy="true" checkrequired=""></datasource> 
+<div ng-hide="User.inserting || User.editing" data-component="crn-datasource-filter" id="crn-datasource-filter-general79666" class=""> 
+  <div class="form-group"> 
+    <label for="textinput-filter" class="">{{"template.crud.search" | translate}}</label> 
+    <input type="text" ng-model="vars.search" id="textinput-filter" class="form-control k-textbox" cronapp-filter="name;" cronapp-filter-operator="" cronapp-filter-caseinsensitive="false" cronapp-filter-autopost="true" crn-datasource="User" value="" placeholder="{{'template.crud.search' | translate}}"> 
+  </div> 
+</div> 
+<div ng-hide="User.editing || User.inserting" class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="cron-crn-grid-search"> 
+  <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;User&quot;,&quot;entity&quot;:&quot;app.User&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.User&quot;,&quot;customId&quot;:&quot;User&quot;,&quot;name&quot;:&quot;User&quot;,&quot;customQueryName&quot;:&quot;app.User&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.User&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;keys&quot;:&quot;id&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;name&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;login&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;picture&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false},{&quot;name&quot;:&quot;password&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:false},{&quot;name&quot;:&quot;theme&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;parameters&quot;:&quot;&quot;,&quot;condition&quot;:&quot;&quot;,&quot;dependentLazyPost&quot;:&quot;&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;editable&quot;:&quot;datasource&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/admin/user.view.html&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;name&quot;,&quot;headerText&quot;:&quot;{{ 'Users.view.Name' | translate }}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;login&quot;,&quot;headerText&quot;:&quot;{{ 'Users.view.Login' | translate }}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:true,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;email&quot;,&quot;headerText&quot;:&quot;Email&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;format&quot;:&quot;&quot;,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;edit|destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;}],&quot;details&quot;:[]}" ng-model="vars.grid79666" class="" style=""> 
+  </cron-grid> 
+</div> 
+<div data-component="crn-form" id="crn-form-form-User"> 
+  <div class="form" ng-show="User.editing || User.inserting"> 
+    <form crn-datasource="User" class=""> 
+      <div class="tool-bar" ng-hide="datasource.editing || datasource.inserting"> 
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.startInserting()"><span class="k-icon k-i-plus"></span></button> 
+        <button class="btn btn-success btn-fab k-button" data-component="crn-button" ng-click="datasource.startEditing()"><span class="k-icon k-i-edit"></span></button> 
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><span class="k-icon k-i-arrow-chevron-left"></span></button> 
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><span class="k-icon k-i-arrow-chevron-right"></span></button> 
+        <button class="btn btn-primary btn-fab k-button" data-component="crn-button" ng-click="datasource.remove()"><span class="k-icon k-i-close"></span></button> 
+      </div> 
+      <div class="active-bar" ng-hide="!datasource.editing &amp;&amp; !datasource.inserting"> 
+        <button class="btn btn-success btn-fab k-button" id="btn_crud_post41107" data-component="crn-button" ng-click="datasource.post()"><span class="k-icon k-i-check"></span></button> 
+        <button class="btn btn-danger btn-fab k-button" id="btn_crud_cancel41107" data-component="crn-button" ng-click="datasource.cancel()"><span class="k-icon k-i-cancel"></span></button> 
+      </div> 
+      <br> 
+      <fieldset ng-disabled="!datasource.editing &amp;&amp; !datasource.inserting"> 
+        <div data-component="crn-textinput" id="crn-textinput-email"> 
+          <div class="form-group"> 
+            <label for="textinput-email" class="">Email</label> 
+            <input type="text" ng-model="User.active.email" class="form-control k-textbox" id="textinput-email" placeholder="Email"> 
+          </div> 
+        </div> 
+        <div data-component="crn-textinput" id="crn-textinput-name"> 
+          <div class="form-group"> 
+            <label for="textinput-name" class="">{{ "Users.view.Name" | translate }}</label> 
+            <input type="text" ng-model="User.active.name" class="form-control k-textbox" id="textinput-name" placeholder="{{ &quot;Users.view.Name&quot; | translate }}" required=""> 
+          </div> 
+        </div> 
+        <div data-component="crn-textinput" id="crn-textinput-login"> 
+          <div class="form-group"> 
+            <label for="textinput-login" class="">{{ "Users.view.Login" | translate }}</label> 
+            <input type="text" ng-model="User.active.login" class="form-control k-textbox" id="textinput-login" placeholder="{{ &quot;Users.view.Login&quot; | translate }}" required=""> 
+          </div> 
+        </div> 
+        <div data-component="crn-textinput" id="crn-textinput-password"> 
+          <div class="form-group"> 
+            <label for="textinput-password" class="">{{ "Users.view.Senha" | translate }}</label> 
+            <input type="password" ng-model="User.active.password" class="form-control k-textbox" id="textinput-password" placeholder="{{ &quot;Users.view.Senha&quot; | translate }}" required=""> 
+          </div> 
+        </div> 
+        <!-- NtoN  --> 
+        <!-- NtoN  end--> 
+      </fieldset> 
+    </form> 
+    <form> 
+      <fieldset> 
+        <!-- OneToN --> 
+        <!--query filter 1toN --> 
+        <!-- query filter 1toN end--> 
+        <datasource data-component="crn-datasource" filter="" name="RoleGrid" enabled="{{User.editing || User.inserting}}" entity="app.Role" keys="id,user" rows-per-page="100" lazy="true" auto-post="true" dependent-lazy-post="User" dependent-lazy-post-field="user" schema="[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}]" condition="" parameters="user={{User.active.id|raw}}" checkrequired=""></datasource> 
+        <!--search 1toN--> 
+        <!-- seach 1toN end--> 
+        <div data-component="crn-textinput" id="crn-textinput-descricao"> 
+          <div class="form-group"> 
+            <div class="component-holder ng-binding ng-scope" data-component="crn-cron-grid" id="crn-cron-grid-199567">
+              <cron-grid options="{&quot;dataSourceScreen&quot;:{&quot;name&quot;:&quot;RoleGrid&quot;,&quot;entity&quot;:&quot;app.Role&quot;,&quot;entityDataSource&quot;:{&quot;id&quot;:&quot;app.Role&quot;,&quot;customId&quot;:&quot;Role&quot;,&quot;name&quot;:&quot;RoleGrid&quot;,&quot;customQueryName&quot;:&quot;app.Role&quot;,&quot;paramValues&quot;:[],&quot;entityFullName&quot;:&quot;app.entity.Role&quot;,&quot;schemaFields&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;type&quot;:&quot;entity&quot;},&quot;keys&quot;:&quot;id,user&quot;,&quot;rowsPerPage&quot;:&quot;100&quot;,&quot;schema&quot;:[{&quot;name&quot;:&quot;id&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:false,&quot;key&quot;:true},{&quot;name&quot;:&quot;user&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:true},{&quot;name&quot;:&quot;user_email&quot;,&quot;type&quot;:&quot;String&quot;,&quot;nullable&quot;:true,&quot;key&quot;:false}],&quot;parameters&quot;:&quot;user={{User.active.id|raw}}&quot;,&quot;condition&quot;:&quot;&quot;,&quot;dependentLazyPost&quot;:&quot;User&quot;,&quot;lazy&quot;:&quot;true&quot;,&quot;checkrequired&quot;:&quot;&quot;,&quot;onBeforeCreate&quot;:&quot;&quot;,&quot;onAfterCreate&quot;:&quot;&quot;,&quot;onBeforeUpdate&quot;:&quot;&quot;,&quot;onAfterUpdate&quot;:&quot;&quot;,&quot;onBeforeDelete&quot;:&quot;&quot;,&quot;onAfterDelete&quot;:&quot;&quot;,&quot;onAfterFill&quot;:&quot;&quot;,&quot;dataComponent&quot;:&quot;crn-datasource&quot;,&quot;id&quot;:&quot;&quot;,&quot;oldName&quot;:&quot;&quot;},&quot;allowPaging&quot;:true,&quot;allowSorting&quot;:true,&quot;allowGrouping&quot;:false,&quot;allowSelectionTotalPageToShow&quot;:true,&quot;allowRefreshGrid&quot;:true,&quot;allowSelectionRow&quot;:true,&quot;editable&quot;:&quot;popupCustom&quot;,&quot;pathView&quot;:&quot;src/main/webapp/views/admin/user.view.html&quot;,&quot;popupInsert&quot;:&quot;modalRoleGrid&quot;,&quot;popupEdit&quot;:&quot;modalRoleGrid&quot;,&quot;modelGrid&quot;:&quot;custom&quot;,&quot;columns&quot;:[{&quot;dataType&quot;:&quot;Database&quot;,&quot;field&quot;:&quot;id&quot;,&quot;headerText&quot;:&quot;{{ 'Permission.view.Role' | translate }}&quot;,&quot;type&quot;:&quot;string&quot;,&quot;sortable&quot;:true,&quot;filterable&quot;:true,&quot;visible&quot;:true,&quot;visibleCrud&quot;:true,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;required&quot;:true,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]},{&quot;dataType&quot;:&quot;Command&quot;,&quot;sortable&quot;:false,&quot;filterable&quot;:false,&quot;visible&quot;:true,&quot;visibleCrud&quot;:false,&quot;linkParentType&quot;:&quot;screen&quot;,&quot;linkParentLoadIfEmpty&quot;:false,&quot;command&quot;:&quot;destroy&quot;,&quot;required&quot;:false,&quot;inputType&quot;:&quot;default&quot;,&quot;aggregates&quot;:[]}],&quot;toolBarButtons&quot;:[{&quot;type&quot;:&quot;Native&quot;,&quot;title&quot;:&quot;create&quot;},{&quot;type&quot;:&quot;Title&quot;,&quot;template&quot;:&quot;<div class=\&quot;crn-grid-title\&quot;>{{'Users.view.Roles' | translate}}</div>&quot;}],&quot;details&quot;:[]}" ng-model="vars.grid914" class=""></cron-grid>
+            </div> 
+          </div> 
+        </div> 
+        <!-- OneToOne  end --> 
+      </fieldset> 
+    </form>   
+  </div> 
+</div> 
+<div class="modal fade" id="modalRoleGrid"> 
+  <div class="modal-dialog"> 
+    <div class="modal-content"> 
+      <form> 
+        <div class="modal-header"> 
+          <button type="button" class="close" data-dismiss="modal" aria-label="{{'Home.view.Close' | translate}}"><span aria-hidden="true">×</span></button> 
+          <h4 class="modal-title">Função</h4> 
+        </div> 
+        <datasource name="AllRoles" entity="api/cronapi/security/roles" keys="AllRoles" rows-per-page="100" on-before-create="" on-after-create="" on-before-update="" on-after-update="" on-before-delete="" on-after-delete="" on-after-fill="" data-component="crn-datasource" class="component-holder" id="crn-datasource-211673"></datasource> 
+        <div class="modal-body"> 
+          <div class="list-group list-group-sm row"> 
+            <div class="component-holder ng-binding ng-scope col-xs-12 col-sm-12 col-md-12 col-lg-12" data-component="crn-combobox-dynamic" id="crn-combobox-dynamic-453587"> 
+              <div class="form-group"> 
+                <label for="">Função</label> 
+                <ui-select crn-datasource="AllRoles" ng-model="RoleGrid.active.id" ng-disabled="disabled" theme="bootstrap" class="crn-select" ng-required="false"> 
+                  <ui-select-match placeholder="Select..." class="">
+                     {{$select.selected.name}} 
+                  </ui-select-match> 
+                  <ui-select-choices repeat="rowData.id as rowData in datasource.data | filter : $select.search" class="" refresh="" refresh-deplay=""> 
+                    <div class="">
+                       {{rowData.name}} 
+                    </div> 
+                  </ui-select-choices> 
+                </ui-select> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+        <div class="modal-footer"> 
+        </div> 
+      </form> 
+    </div> 
+  </div> 
+</div>

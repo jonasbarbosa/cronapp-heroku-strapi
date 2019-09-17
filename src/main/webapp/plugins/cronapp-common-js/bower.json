@@ -1,0 +1,23 @@
+{
+  "name": "cronapp-common-js",
+  "version": "2.2.6",
+  "authors": [
+    "Adir Lima <adir.santos@techne.com.br>"
+  ],
+  "description": "Cronapp Commons Functions",
+  "main": "dist/parser.js",
+  "keywords": [
+    "dom",
+    "xml",
+    "json"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.cronapp.io/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

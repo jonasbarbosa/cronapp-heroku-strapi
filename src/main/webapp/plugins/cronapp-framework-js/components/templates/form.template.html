@@ -1,0 +1,20 @@
+<div class="form">
+  <form crn-datasource="">    
+    <span class="tool-bar" ng-hide="datasource.editing || datasource.inserting">
+      <button class="btn btn-primary component-holder"  data-component="crn-button" ng-click="datasource.startInserting()"><i class="glyphicon glyphicon-plus-sign"></i></button>
+      <button class="btn btn-success component-holder" data-component="crn-button" ng-click="datasource.startEditing()"><i class="glyphicon glyphicon-edit"></i></button>
+      <button class="btn btn-primary component-holder"  data-component="crn-button" ng-disabled="!datasource.hasPrevious()" ng-click="datasource.previous()"><i class="glyphicon glyphicon-chevron-left"></i></button>
+      <button class="btn btn-primary component-holder"  data-component="crn-button" ng-disabled="!datasource.hasNext()" ng-click="datasource.next()"><i class="glyphicon glyphicon-chevron-right"></i></button>
+      <button class="btn btn-primary component-holder" data-component="crn-button" ng-click="datasource.remove()"><i class="glyphicon glyphicon-trash"></i></button>
+    </span>
+    <span class="active-bar" ng-hide="!datasource.editing && !datasource.inserting">
+      <button class="btn btn-success component-holder" data-component="crn-button" ng-click="datasource.post()"><i class="glyphicon glyphicon-ok"></i></button>
+      <button class="btn btn-danger component-holder" data-component="crn-button" ng-click="datasource.cancel()"><i class="glyphicon glyphicon-remove"></i></button>
+    </span>
+    <fieldset ng-disabled="!datasource.editing && !datasource.inserting">
+      <div class="form-group" data-container="true">
+         Drag form fields here
+      </div>
+    </fieldset>
+  </form>
+</div>

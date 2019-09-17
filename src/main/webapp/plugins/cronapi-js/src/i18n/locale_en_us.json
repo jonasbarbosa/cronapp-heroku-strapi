@@ -1,0 +1,6 @@
+{
+	"callServerBlockly": "Obtain Server Blockly value",
+	"functionToCallServerBlockly": "function to obtain a value from a block server",
+	"classNameWithMethod": "Blockly name",
+	"params": "Parameters"
+}
