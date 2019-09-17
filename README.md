@@ -20,5 +20,5 @@ Esta é uma aplicação criada com o CronApp IDE.
 8. Para rodar, vá em Executar > Rodar
 
 ## Referências
-
+API: https://cronapp-heroku-strapi.herokuapp.com/posts
 [CronApp IDE](http://www.cronapp.io/)
